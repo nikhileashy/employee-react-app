@@ -1,18 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Employee</a>
+    <Link class="navbar-brand" to="#">Employee</Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/add">Add Employee</a>
-        <a class="nav-link" href="/search">Search Employee</a>
-        <a class="nav-link" href="/delete">Delete Employee</a>
+        <Link class="nav-link active" aria-current="page" to="/add">Add Employee</Link>
+        <Link class="nav-link" to="/search">Search Employee</Link>
+        <Link class="nav-link" to="/delete">Delete Employee</Link>
       </div>
     </div>
   </div>
